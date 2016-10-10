@@ -1,0 +1,47 @@
+<div class="popup-view">
+    <button class="button button-block setting-btn" ng-click="goFBProfile()">
+        Profile
+    </button>
+    <button class="button button-block setting-btn" ng-click="goFriends()">
+        Places
+    </button>
+    <button class="button button-block setting-btn" ng-click="goFamilie()">
+        Familie and Friends
+    </button>
+    <label class="item notification-label" style="font-size:18px;font-weight:200%">
+        Notification
+    </label>
+    <label class="item notification-label" style="padding-left:5%" ng-repeat="item in checkList">
+        <label class="toggle toggle-balanced disable-user-behavior switch-btn">
+            <input type="checkbox" ng-model="ngModel" ng-value="{{item.checked}}" ng-change="ngChange()" ng-disabled="ngDisable" class="ng-valid ng-dirty" value="on">
+            <div class="track">
+                <div class="handle">
+                </div>
+            </div>
+        </label>
+        <div style="margin-top:-30px">{{item.text}}</div>
+    </label>
+    
+    <!--<label class="item notification-label" style="padding-left:5%">
+        <label class="toggle toggle-balanced disable-user-behavior switch-btn">
+            <input type="checkbox" ng-model="ngModel" ng-value="ngValue" ng-change="ngChange()" ng-disabled="ngDisable" class="ng-valid ng-dirty" value="on">
+            <div class="track">
+                <div class="handle">
+                </div>
+            </div>
+        </label>
+        <div style="margin-top:-30px">When I'm close</div>
+    </label>
+    <label class="item notification-label" style="padding-left:5%">
+        <label class="toggle toggle-balanced disable-user-behavior switch-btn">
+            <input type="checkbox" ng-model="ngModel" ng-value="ngValue" ng-change="ngChange()" ng-disabled="ngDisable" class="ng-valid ng-dirty" value="on">
+            <div class="track">
+                <div class="handle">
+                </div>
+            </div>
+        </label>
+        <div style="margin-top:-30px">
+            Assigned to new place
+        </div>
+    </label>-->
+</div>

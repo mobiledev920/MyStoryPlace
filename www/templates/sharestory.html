@@ -1,0 +1,86 @@
+<ion-view view-title="ShareStory" class="share-view" hide-nav-bar="false" ng-init="init()">
+    
+    <ion-nav-bar class="bar-positive">
+        <h1 class="title">Tell your own story</h1>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-arrow-left-c" ng-click="goBack()">
+            </button>
+        </ion-nav-buttons>
+        <!--<ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-navicon" ng-click="showMenu()">
+            </button>
+        </ion-nav-buttons>-->
+    </ion-nav-bar>
+    <ion-content>
+    <div>
+        <div class="input-view">
+            <label class="item item-input">
+            <!--<span class="input-label">Story name</span>-->
+            <input type="text" ng-model="storyName.text" placeholder="Story Name">    
+            </label>
+        </div>
+        <div class="story-btns">
+            <div class="row">
+                <div class="col">
+                    <button class="button button-icon ion-document-text" ng-click="addText()">
+                    </button>
+                    <div class="share-text">
+                        Write a story
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ion-plus-circled">
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="button button-icon ion-folder">
+                    </button>
+                    <div class="share-text">
+                        Add a File
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="button button-icon ion-ios7-camera" ng-click="takePicture()">
+                    </button>
+                    <div class="share-text">
+                        Take a photo
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="button button-icon ion-videocamera" ng-click="recordVideo()">
+                    </button>
+                    <div class="share-text">
+                        Record a Video
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="button button-icon ion-ios7-mic" ng-click="recordAudio()">
+                    </button>
+                    <div class="share-text">
+                        Tell a story
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story-list">
+            <!--<div class="row">-->
+                <div class="list-file" ng-repeat="file in files track by $index" on-hold="editRmFile($index)">
+                    <div ng-if="file==1" class="ion-document-text"></div>
+                    <div ng-if="file==2" class="ion-image"></div>
+                    <div ng-if="file==3" class="ion-social-vimeo"></div>
+                </div>
+            <!--</div>-->
+        </div> 
+        <button class="button button-clear button-block story-btn" ng-click="goFinish()">
+            <div class="btn-large-title">
+                Finish the story
+            </div>
+            <div class="btn-small-title">
+                And share with your loved ones
+            </div>
+        </button>
+    </div>
+    </ion-content>
+</ion-view>

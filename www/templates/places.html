@@ -1,0 +1,39 @@
+<ion-view view-title="Places" class="place-view" hide-nav-bar="false" ng-init="init()">
+
+    <ion-nav-bar class="bar-positive">
+        <h1 class="title">Places</h1>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-arrow-left-c" ng-click="goBack()">
+            </button>
+        </ion-nav-buttons>
+        <!--<ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-navicon">
+            </button>
+        </ion-nav-buttons>-->
+    </ion-nav-bar>
+    
+    <ion-content scroll="false">
+        <ion-content class="scroll-content story-content-view">
+            <ion-list ng-repeat="placeItem in placeItems">
+               <a class="item item-avatar">
+                  <img class="profile-image" src="img/icon_home.png">
+                  <div class="item">
+                      <h2>{{placeItem.story_address}}</h2>
+                      <p>1975-1985{{placeItem.age}}</p>
+                      <p>Admin: {{placeItem.admin_username.user_full_name}}</p>
+                      <button class="button button-icon location-btn" ng-click="goMap({{placeItem}})">
+                          <div class="ion-ios7-location"></div>
+                      </button>
+                      <button class="button button-icon connect-btn">
+                          <div class="ion-link"></div>
+                      </button>
+                  </div> 
+               </a>
+            </ion-list>
+        </ion-content>
+       <button class="button button-clear button-icon share-story" ng-click="goMaintainPlaces()">
+            <div class="ion-clipboard ion-plus-circled">
+            </div>
+       </button>
+    </ion-content>
+</ion-view>

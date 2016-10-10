@@ -1,0 +1,15 @@
+<ion-view title="" class="detail-view" hide-nav-bar="true" ng-init="init()">
+
+  <ion-content>
+      <button class="button icon ion-close-round button-clear right" style="margin-left: 85%; width: 5px;"  ng-click="goBack()">
+      </button>
+        <ion-slide-box auto-play="true" on-slide-changed="slideHasChanged($index)">
+            
+            <ion-slide ng-repeat="item in current.slider">
+                <!--<img class="slide_pic" ng-src="{{item.img_url}}"/>-->
+                <img class="slide_pic" ng-src="{{item.src}}">
+            </ion-slide>
+        </ion-slide-box>
+   
+  </ion-content>
+</ion-view>

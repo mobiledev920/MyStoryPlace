@@ -1,0 +1,48 @@
+<ion-view view-title="comment" class="comment-view" hid-nav-bar="false" ng-init="init()">
+    <ion-nav-bar class="bar-positive">
+        <h1 class="title">Pa sommerferie som knaegt</h1>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-arrow-left-c" ng-click="goBack()">
+            </button>
+        </ion-nav-buttons>
+        <!--<ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-navicon">
+            </button>
+        </ion-nav-buttons>-->
+    </ion-nav-bar>
+    <ion-content>
+        <div class="header-title">
+            <h1 style="font-size:20px;">{{view_title}}</h1>
+            <h1 style="font-size:15px;">1975-1985</h1>
+        </div>
+        <div class="comment-list-view" style="height=80%;">
+            <ion-content class="scroll-content story-content-view">
+                <ion-list>
+                <a ng-repeat="story_comment in story_comments" class="item item-avatar">
+                    <!--<img class="profile-image" src="img/Sport-1.jpeg">-->
+                    <div style="width:25%;margin-right:0px;text-align:center;">
+                        <img class="profile-image" ng-src="{{story_comment.story_user.user_photo_url}}">
+                        {{story_comment.story_comment_date}}
+                    </div>
+                    <div class="row item">
+                        <div class=""  ng-if="story_comment.story_comment_photo != ''">
+                            <img style="width:80px;height:88px;" ng-src="{{story_comment.story_comment_photo}}">
+                        </div>
+                        <div class="col"  style="width:0;" ng-if="story_comment.story_comments != ''" style="padding-left:15px;">
+                            <h2>{{story_comment.story_user.user_full_name}}</h2>
+                            <p>{{story_comment.story_comments}}</p>
+                        </div> 
+                    </div> 
+                </a>
+                </ion-list>
+            </ion-content>
+        </div>
+        <div class="add-story">
+            <button class="button button-icon ion-chatbubbles" ng-click="goAddComment()">
+                <h2 style="color:#ffffff;margin-top:-45px;margin-left:7px">+</h2>
+            </button>
+        </div>
+        
+    </ion-content>
+    
+</ion-view>

@@ -1,0 +1,40 @@
+<ion-view view-title="MemoryLane" class="intro-view" hide-nav-bar="false" ng-init="init()">
+    
+    <ion-nav-bar class="bar-positive">
+        <h1 class="title">My Story Place</h1>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear" ng-click="goBack()">
+            </button>
+        </ion-nav-buttons>
+        <!--<ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-navicon">
+            </button>
+        </ion-nav-buttons>-->
+    </ion-nav-bar>
+    
+    <div>
+      
+        <div class="login-btns">
+            <button class="button button-positive button-block icon-left ion-social-facebook join-btn" ng-click="fbLogin()">
+                Log On
+            </button>
+            
+            <!--<video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinlaine" class="videoplayer">
+                <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
+            </video>-->
+            <div class="videoplayer">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0&amp" frameorder="0" allowfullscreen="true" events="onPlay()"/>
+            </div>
+            <ion-checkbox ng-model="isChecked" id="check_term" style="background-color:initial;height: 30px;padding-top: 7px;">I have read and accepted the</ion-checkbox>
+            <div style="text-align:center;margin-top:-5px;">
+                <h5 style="margin:0px; margin-bottom:20px;"><a href="www.mystoryplace.dk">terms and conditions</a></h5> 
+            </div>
+            <!--<button class="button button-clear button-block  login-btn" ng-click="goLogin()">
+                LOG IN
+            </button>-->
+            <button class="button button-positive button-block icon-left ion-social-facebook fb-btn" ng-click="goSingleMap()">
+                Log In with Facebook
+            </button>
+        </div>
+    </div>
+</ion-view>

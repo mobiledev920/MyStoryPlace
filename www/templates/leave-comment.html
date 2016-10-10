@@ -1,0 +1,45 @@
+<ion-view view-title="" class="comment-view" hide-nav-bar="true" ng-init="init()">
+
+
+    <ion-content>
+        <button class="button button-clear" style="margin-top: 25px;" ng-click="goBack()">
+            <img style="width: 12px;" src="img/back_icon.png"/>
+        </button>
+        <img class="sub-pic" ng-src="{{active_post.post_photo_medium_url}}">
+        <div class="description">
+            <div class="subject">
+                {{active_post.post_title}}
+            </div>
+            <div class="content">
+                {{active_post.post_content}}
+            </div>
+        </div>
+        <div class="comment-container">
+            
+            <ion-list>
+                <ion-item class="scroll-item item-avatar" ng-repeat="item in commentList">
+                    <img style="border-radius:100%;" ng-src="{{item.comment_author_photo_url}}"/>
+                    <p><strong>{{item.comment_author_name}}</strong></p>
+                    <p>{{item.comment_content}}</p>
+         
+               
+                
+            </ion-list>
+        </div>
+        <div class="bar1-footer" style="padding:0; text-align: center;" ng-if="commentList.length>2">
+            <button class="button button-clear" style="font-size: 13px; color: #888888;" ng-click="view_more()">
+                View more comments
+            </button>
+        </div>
+     
+    </ion-content>
+
+    <ion-footer-bar class="bar-footer" style="padding:0;">
+        <div class="item-input-wrapper row">
+            <input style="padding-left: 10px; width:80%;border-radius:4px;" type="text" placeholder="Write a comment" ng-model="comment_content"/>
+            <button ng-click="pressShare()" class="button share_btn">
+                SHARE
+            </button>
+        </div>
+    </ion-footer-bar>
+</ion-view>

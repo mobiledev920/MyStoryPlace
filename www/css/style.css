@@ -1,0 +1,2188 @@
+
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontawesome';
+  src: url('fonts/fontawesome-webfont.eot');
+  src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*===========================================
+Global View
+============================================*/
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.popup{
+    border-radius: 10px;
+    width:280px;
+    height: 310px;
+    margin-top:-150px;
+    background-color: #ffffff;
+}
+.popup .popup-head{
+    padding:0px;
+}
+.popup .popup-body{
+    height: 200px;
+}
+.popup .popup-buttons{
+    margin-top: 25px;
+}
+.popup .popup-buttons .button.button-positive{
+    background-color: #008811;
+}
+.tabs-striped .tab-item + .tab-item:before{
+    border: none !important;
+}
+.bar-assertive{
+    background-color: #000000 !important;
+    height: 50px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #c9182d !important;
+    padding-top:5px;
+    
+}
+.bar{
+    background-color: #000000;
+}
+.tabs-striped .tab-item{
+    color: #666666;
+    opacity: 1 !important;
+}
+.resource-button{
+    margin-left: 5px;
+    width: 25px;
+    height: 20px;
+}
+.profile-button{
+    width: 30px;
+    height: 20px;
+}
+
+.title{
+    color: #ffffff !important;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    font-size: 18px;
+ 
+}
+.input-label_sol {  
+  display: table;
+  padding: 7px 10px 7px 25px;
+  max-width: 300px;
+  width: 35%;
+  color: #444;
+  min-width: 200px;
+  font-size: 14px;
+}
+.support-view .button-assertive.active{
+    background-color: #ff0000;
+}
+
+
+.input-label-text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 100px;
+  -moz-box-flex: 1;
+  -moz-flex: 1 0 100px;
+  -ms-flex: 1 0 100px;
+  flex: 1 0 100px;
+  display: table;
+  padding: 7px 10px 7px 3px;
+  min-width: 200px;
+  width: 35%;
+  color: #444;
+  font-weight: bold;
+  font-size: 14px; }
+
+.buttonArtiEksi {
+  height:30px;
+  border-color: #b2b2b2;
+  background-color: #f8f8f8;
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 6px;
+  min-width: 30px;
+  min-height: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  .bar.bar-positive{
+      background-color: #666666 !important;
+}
+.bar.bar-positive .title.title-left{
+    margin-top: 0px;
+    text-align: center;
+}
+.bar.bar-positive .button.back-button {
+  width: 30px;
+  font-size: 24px;
+}
+
+/*==============================================
+ *  Left Side-menu style
+===============================================*/
+
+.menu.menu-left {
+  background-color: #666666;
+  border-color: #666666
+   !important;
+}
+.menu.menu-left .bar-header {
+  height: 380px !important;
+  text-align: center;
+  background-color: #666666 !important;
+  background-image: linear-gradient(0deg, #666666, #666666 50%, transparent 50%);
+}
+
+
+.menu.menu-left .bar-header .left-menu-box {
+  width: 100%;
+}
+.menu.menu-left .bar-header .left-menu-box .left-menu-InfoName{
+   margin-top: 50px;
+   margin-bottom: 0px;
+   font-size: 20px;
+   color: #ffffff; 
+}
+.menu.menu-left .bar-header .left-menu-box .left-menu-smallInfoName{
+   margin-top: 10px;
+   margin-bottom: 0px;
+   padding-left: 15%;
+   padding-right: 15%;
+   padding-bottom: 0px;
+   font-size: 16px;
+   color: #ffffff; 
+   width:90%;
+   margin-left:5%;
+   text-align: center;
+}
+.menu.menu-left .bar-header .left-menu-box .left-menu-left-btn{
+   margin-top: 20%;
+   margin-bottom: 0px;
+   font-size: 50px;
+   color: #ffffff;
+   width: 20%;
+}
+.menu.menu-left .bar-header .left-menu-box .left-menu-left-btn .button-icon {
+    padding: 0px;
+}
+.menu.menu-left .bar-header .left-menu-box .left-menu-avatar {
+ 
+  border: 2px solid #ffffff;
+  width: 60%;
+  height: 120px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 0px;
+  margin-top: 8%;
+  /*margin-left: 25px;
+  margin-right: 25px;*/
+}
+.menu.menu-left .bar-header .left-menu-box .user-image {
+    font-size: 50px;
+    color: #ffffff;
+        
+}
+.menu.menu-left .bar-header .left-menu-box .button-icon {
+    color: #ffffff;
+    font-size: 55px;
+    min-height: 50px;
+    width: 50%;
+    padding: 0;
+}
+.menu.menu-left .bar-header .left-menu-box .comment-num {
+    font-size: 16px;
+    color: #666666;
+    margin-left: -24%;
+    margin-right: 30%;
+    margin-top: 15%;
+    z-index: 1000;
+}
+.menu.menu-left .bar-header .left-menu-box .col .row {
+    padding:0;
+    margin:0 auto;
+}
+.menu.menu-left .has-header-bar {
+    margin-top: 334px;
+    
+}
+.menu.menu-left .has-header-bar .item-icon-left {
+    background-color: #666666 !important;
+    border-width: 0px;
+    font-weight: 300%;
+    padding-left: 20px;
+    height: 54px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+ 
+ .menu.menu-left .has-header-bar .item-icon-left .profile-image {
+     width:40px;
+     height: 40px;
+     margin-top: 0px;
+     padding: 0px;
+     border-radius: 50%;
+     top: initial;
+ }
+ 
+.button {
+  color: #00ffff;
+}
+.right-buttons .button .badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background-color: #ededed;
+  color: #d12026;
+}
+ .tabs{
+      background-color: #000000 !important;
+      color: #777777 !important;
+    
+  }
+  .tab-item{
+      opacity: 1;
+  }
+  .tab-item-active{
+      color: #ffffff !important;
+  }
+  .tabs .icon.home_off{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/home_icon_off.png');
+      background-size: 24px;      
+  }
+  .tabs .icon.home_on{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/home_icon_on.png');
+      background-size: 24px;      
+  }
+
+    
+  .tabs .icon.community_off{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/globe_icon_off.png');
+      background-size: 22px;      
+  }
+  .tabs .icon.community_on{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/globe_icon_on.png');
+      background-size: 22px;      
+  }  .tabs .icon.video_off{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/radio_off.png');
+      background-size: 20px;      
+  }
+  .tabs .icon.video_on{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/radio_on.png');
+      background-size: 20px;      
+  }  .tabs .icon.store_off{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/shopping_bag_icon_off.png');
+      background-size: 20px;      
+  }
+  .tabs .icon.store_on{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/shopping_bag_icon_on.png');
+      background-size: 20px;      
+  }
+    .tabs .icon.support_off{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/support_icon_off.png');
+      background-size: 22px;      
+  }
+  .tabs .icon.support_on{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/support_icon_on.png');
+      background-size: 22px;      
+  } 
+  .icon.nav-icon{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/resources_icon_act.png');
+      background-size: 22px;      
+  }
+  .resource_icon{
+      width: 25px;
+      margin-left: 10px;
+  }
+  .profile_icon{
+      width: 35px;
+      margin-right: 5px;
+      margin-top:3px;
+  }
+/*===========================================
+Home View
+============================================*/
+.home-view .detail{
+    text-align: right;
+    color: #adadad;
+   
+}
+.home-view p{
+    font-size: 12px;
+    padding:0;
+    margin-bottom: 0px;
+   
+
+}
+.home-view .slider-pager {
+  margin-top: -60px;
+  color: #ffffff;
+  bottom: 20px;
+
+  text-align: center;
+
+}
+
+.banner{
+    width:100%;
+ 
+}
+.home-view .forCommunity{
+    margin-left: 10px;
+    border-bottom: 1px solid #ededed;
+    white-space: nowrap;
+}
+.home-view .picture{
+    width: 100%;
+   
+}
+.home-view .ion-item{
+    display: inline-block;
+    border: none;
+    white-space: nowrap;
+}
+.home-view .item{
+    float: left;
+    width: 150px;
+    padding: 0px; 
+    padding-right: 10px;  
+    border: none; 
+   /*border-bottom: 1px solid #ddd;*/
+}
+.home-view .subject{
+    margin-top: 5px;
+    margin-left: 2px;
+    font-size: 14px;
+    
+    margin-bottom: 10px;
+   
+    font-family: 'AkzidenzGroteskCondensed'!important;
+
+}
+
+.home-view .product_pic{
+    width: 100px;;
+   
+    margin-left: 0px;
+}
+.home-view .item1{
+    float: left;
+    width: 150px;
+
+    border: none; 
+    text-align: center;
+}
+.home-view .item2{
+    float: left;
+    width: 240px;
+    padding: 0px; 
+    padding-right: 10px;  
+    border: none; 
+}
+.home-view .video_name{
+    margin-top: 9px;
+    margin-left: 3px;
+    font-size: 14px;
+
+    margin-bottom: 14px;
+    
+
+    font-family: 'AkzidenzGroteskCondensed'!important;
+ 
+   
+}
+.home-view .latest{
+    font-size: 12px;
+    color: #444;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.home-view .quickMenu{
+    width: 94%;
+    margin-left: 0%;
+    height: 120px;
+    margin-top: 3px;
+   
+}
+.home-view .forMenu{
+   
+    padding-bottom: 14px;
+    margin-top: -76px;
+    color: #ffffff;
+   
+ 
+    font-weight: 500;
+    font-size: 18px;
+  
+    
+    font-family: 'AkzidenzGroteskCondensed'!important;
+ 
+}
+.home-view .title1{
+    color: #ffffff !important;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    font-size: 20px;
+    margin-top: -10px;
+ 
+}
+.home-view .slide_pic{
+    width: 100%;
+}
+.home-view .slide_logo0{
+    width: 30%;
+    position: absolute;
+    top: 40px;
+    margin-left: 10%;
+    
+
+   
+}
+.home-view .slide_logo1{
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    margin-left: 20%;
+    
+
+    max-height: 100px;
+}
+.home-view .slide_logo2{
+    width: 50%;
+    position: absolute;
+    top: 60px;
+    margin-left: 25%;
+    
+
+    max-height: 100px;
+}
+.home-view .slide_logo3{
+    width: 38%;
+    position: absolute;
+    top: 140px;
+    margin-left: 32%;
+    
+
+    max-height: 100px;
+}
+.home-view .pro_name{
+    margin-top: 0px;
+  
+    font-size: 14px;
+  
+   
+    font-family: 'AkzidenzGroteskCondensed'!important;
+
+   
+}
+.home-view .pro_price{
+    margin-top: 0px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #777777;
+}
+.home-view .description{
+    margin: -120px auto;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 6%;
+    width: 88%;
+    padding-top: 10px;
+}
+
+.home-view .content{
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+
+/*===========================================
+Community view
+============================================*/
+.community-view .item{
+    padding: 0;
+  
+    text-align: center;
+    border-top: 5px solid #ededed;   
+}
+.community-view .picture{
+   
+    width: 100%;
+
+}
+.community-view .subject{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding-right: 10px;
+    
+    font-family: 'AkzidenzGroteskCondensed'!important;
+
+    
+}
+.community-view .content{
+    padding-right:10px;  
+    text-align: left;
+    text-align: left;
+    text-overflow: initial;
+    white-space: normal;
+    margin-left: 20px;
+    margin-top: 14px;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 14px;
+    
+}
+
+.community-view .comment{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+/*===========================================
+Video view
+============================================*/
+
+.video-view .user-pic{
+    width: 100%;
+    height: 200px;
+}
+.video-view .content-container{
+    width: 95%;
+    margin-left: 5%;
+   
+}
+.video-view .subject{
+    margin-top: 16px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+/*.video-view .list-item{
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 0px;
+    border-left: 1px solid #ffffff;
+}*/
+.video-view .item{
+    border: none;
+    border-bottom: 1px solid #dddddd;
+}
+
+/*===========================================
+Support View
+============================================*/
+.support-view .donate_button{
+    margin: 25px  8% auto;
+    text-align: center;
+}
+.support-view .donate_button .slogan{
+    font-size: 20px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+    
+}
+.support-view .donate_button .content{
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 16px;
+}
+.support-view .donate_button .button-assertive{
+    background-color: #c9182d;
+    width: 80%;
+    min-height: 40px;
+    margin-left: 10%;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    margin-top: 25px;
+    height: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    line-height: 10px;
+    margin-bottom: 40px;
+    
+}
+.support-view .give_button{
+    margin: -70px  15% auto;
+    text-align: center;
+    width: 70%;
+    background-color: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    min-height: 40px;
+    line-height: 10px;
+    font-weight: 300;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+}
+/*===========================================
+Store View
+============================================*/
+.store-view .bar-subheader{
+    border-bottom: 1px solid #ededed;
+    height: 50px;
+    background-color: #000000;
+
+}
+
+.store-view input, section{
+    clear: both;
+    padding-top: 10px;
+    display: none;
+}
+.store-view label{
+    display: block;
+    color: #999999;
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+.store-view label:hover{
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+#tab1:checked ~#content1, #tab2:checked ~#content2,#tab3:checked ~#content3,#tab4:checked ~#content4{
+    display: block;
+}
+input:checked + label{
+    border-bottom: 3px solid #c9182d;
+    text-decoration: none;
+    color: #c9182d;
+}
+.store-view .banner{
+    width: 100%;
+    margin-top: -10px;
+}
+.store-view .cart{
+    /*float: left;*/
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+     font-size: 12px;
+}
+.store-view .cart .pic{
+    width: 100%;
+}
+.store-view .cart .name{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+
+    
+}
+.store-view .cart .price{
+    color: #999999;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    font-weight: 100;
+    margin-top: 8px;
+
+}
+.store-view .foot{
+    text-align: center;
+    border-top: 2px solid #eaeaea;
+    background-color: #ffffff !important;
+    
+}
+.store-view .divider{
+    border-top: 1px solid #ededed;
+    margin-top: -10px;
+}
+.store-view .slider{
+    margin-top:0px;
+    text-align: center;
+}
+.store-view .slide_pic{
+    padding-top: 10px;
+    width: 80%;
+  
+    padding-bottom: 40px;
+}
+
+.store-view .detail{
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.store-view .detail .kind{
+    float: left;
+    font-size: 10px;
+    margin-left: 3px;
+    
+}
+.store-view .detail .kind1{
+    float: left;
+    font-size: 10px;
+    margin-left: 20px;
+}
+.store-view .detail .cont{
+    float: left;
+    font-size:  10px;
+    color: #999999;
+    margin-left: 5px;
+}
+.store-view .divider1{
+    position: relative;
+    border-top: 1px solid #ededed;
+    margin-top: 40px;
+    
+}
+.store-view .price{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+   
+}
+.store-view .description{
+    padding-top: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.store-view .select_in{
+    width: 95%;
+    margin-left: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    background-color: #ededed;
+    border: none;
+}
+.store-view .color_box{
+    margin-left: 10px;
+    width: 80px;
+    margin-top: 20px;
+}
+.store-view .color_box .black{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #000000;
+ 
+}
+.store-view .color_box .red{
+    width: 30px;
+    height: 30px;
+    margin-left: 0px;
+    background-color: #c9182d;
+ 
+}
+.store-view .num-button{
+    background-color: #ededed;
+    width:70px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #000000;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+}
+.store-view .button-assertive{
+    background-color: #000000;
+    border: none;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 90px;
+}
+.store-view .share{
+    margin: 25px 10% auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+.store-view .forCommunity{
+    margin-left: 10px;
+    border-bottom: 1px solid #ededed;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+.store-view .picture{
+    width: 90%;
+ 
+}
+.store-view .bar-subheader{
+    background-color: #ffffff;
+    border-bottom: 1px solid #ededed;
+ 
+}
+.store-view .bar-subheader .tab_btn_on{
+   float: left;
+   margin-left: 12px;
+   margin-top: 14px;
+   color: #c9182d;
+   padding-bottom: 14px;
+   border-bottom: 3px solid #c9182d;
+ 
+}
+.store-view .bar-subheader .tab_btn_off{
+   float: left;
+   margin-left: 12px;
+   margin-top: 14px;
+   color: #adadad;
+   padding-bottom: 14px;
+ 
+ 
+}
+.store-view .title1{
+    color: #000000 !important;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+   
+ 
+}
+.store-view .ion-item{
+    display: inline-block;
+    border: none;
+    white-space: nowrap;
+}
+.store-view .item{
+    float: left;
+    width: 150px;
+    padding: 0px; 
+    padding-right: 10px;  
+    border: none; 
+}
+.store-view .subject{
+    
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+  
+    text-align: center;
+    line-height: 16px;
+}
+.store-view .price1{
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 3px;
+    text-align: center;
+    margin-left: -10px;
+    margin-bottom: 15px;
+    
+}
+/*===========================================
+One Detail View
+============================================*/
+
+.detail-view .slide_pic{
+    width: 100%;
+    padding-bottom: 50px;
+ 
+}
+/*===========================================
+Order List View
+============================================*/
+.order-view .order_pic{
+    width: 60px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.order-view .button_pic{
+    width: 10px;
+    height: 20px;
+
+   
+}
+.order-view .cart{
+   padding-top:0px; 
+   padding-bottom: 0px; 
+   margin-left: 2%;;
+   width: 96%;
+   border-left: 1px solid #ffffff;
+   border-bottom: 1px solid #ddd;
+}
+.order-view .item{
+    padding:0;
+    border: none;
+    margin-top: 1px;
+  
+}
+.order-view .content{
+    margin-left: 9px;
+}
+.order-view .content .title1{
+    font-size: 14px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+}
+.order-view .content .size{
+    font-size: 12px;
+    color: #777777;
+    margin-top: -2px;
+    padding:0;
+}
+.order-view .content .qty{
+    font-size: 12px;
+    text-align: left;
+    padding-top: 15px;
+    margin-left: -5px;
+  
+
+    
+}
+.order-view .content .price{
+    font-size: 12px;
+    text-align: right;
+    margin-left: -39px;
+    padding-top: 15px;
+
+    
+}
+.order-view .total{
+    border-bottom: 1px solid #ccc; 
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    padding-left: 10px; 
+    padding-top: 30px; 
+    padding-bottom: 16px;
+    padding-right: 10px;
+    font-size: 18px;
+    margin-top: 1px;
+
+    
+}
+.order-view .shipping{
+    font-size: 12px;
+    color: #5d5d5d;
+    padding-bottom: 45px;
+}
+.order-view .shipping4{
+    font-size: 12px;
+    color: #5d5d5d;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.order-view .subTotal{
+    font-size: 12px;
+    color: #5d5d5d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ 
+}
+.order-view .cost1{
+    color: #999999;
+    font-size: 16px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    text-align: right;
+        padding-top: 15px;
+    padding-bottom: 15px;
+}
+.order-view .cost2{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    text-align: right;
+}
+.order-view .cost4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    text-align: right;
+}
+
+
+.order-view .total2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ 
+}
+.order-view .cost{
+    color: #999999;
+    font-size: 16px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    text-align: right;
+}
+.order-view .cal{
+    color: #c9182d;
+    font-size: 12px;
+    float: right; 
+    padding: 0px;
+    text-align: center; 
+    margin-right: 10px;
+    width: 108px; 
+    color: #c9182d; 
+    margin-top: -40px;
+    border-bottom: 1px solid  #c9182d;
+}
+.order-view .check_btn{
+    background-color: #000000;
+    min-height: 40px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    line-height: 10px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+}
+.order-view .back_btn{
+    background-color: #ededed;
+    margin-top: 30px;
+    border: 1px solid #aaa;
+    min-height: 40px;
+    line-height: 10px;
+    font-size: 16px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+}
+
+/*===========================================
+Show Stories view
+============================================*/
+.show-stories-view .header-title {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 40px;
+}
+.show-stories-view .user-img-view {
+    height: 10%;
+    font-size: 50px;
+    margin-left: 83%;
+    margin-top: -60px;
+    margin-right: 5%;
+}
+.show-stories-view .slide-video-view {
+    width:60%;
+    margin: 10% 20% 0% 20%;
+    height: 30%;
+    background-color: #666666;
+}
+.show-stories-view .slide-video-view .carousel3{
+    height: 100%;
+}
+.show-stories-view .slide-video-view .carousel3 .bgimage{
+    background-color: red;
+    height: 100%;
+    width:100%;
+}
+.show-stories-view .read-comment {
+    width:90%;
+    margin: 2% 5% 0% 5%;
+    height: 35%;
+}
+.show-stories-view .read-comment .ion-volume-medium {
+    font-size: 80px;
+    color:#000000;
+}
+.show-stories-view .bottom-btns{
+    margin-top: 2px;
+    bottom:5px !important;
+}
+/*===========================================
+Add Comment view
+============================================*/
+.add-comment-view .header-title{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 40px;
+}
+.add-comment-view .take-photo {
+    width:80%;
+    margin:2% 10% 0% 10%;
+    height:40%;
+    border-style: dashed;
+    border-color: #666666;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.add-comment-view .take-photo .button-icon {
+    width: 80%;
+    margin:5% 10% 0% 10%;
+    font-size: 70px;
+    color: #666666;
+}
+.add-comment-view .set-photo {
+    width:80%;
+    margin:2% 10% 0% 10%;
+    height:40%;
+    border-color: #666666;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.add-comment-view .write-comment {
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    height: 20%;
+}
+.add-comment-view .write-comment .item-input {
+    height: 100%;
+}
+.add-comment-view .btn-comment {
+    width: 40%;
+    margin-left: 30%;
+    min-height: 40px;
+    border-color: #ffffff;
+    border-width: 2px;
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #666666;
+}
+/*===========================================
+Comment view
+============================================*/
+.comment-view .header-title{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 30px;
+}
+.comment-view .comment-list-view {
+    width:100%;
+    height: 70%;
+    margin:0px auto 0px auto;
+    
+}
+.comment-view .comment-list-view .story-content-view{
+    margin:80px auto 100px auto;
+
+}
+.comment-view .story-content-view .item-avatar {
+    border-width:0px;
+    min-height: 120px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    
+}
+.comment-view .story-content-view .item-avatar .profile-image {
+    margin-top:15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.comment-view .story-content-view .item-avatar .item {
+    border: 1px solid #666666;
+    border-color: #666666;
+    width: 73%;
+    margin-left: 25%;
+    /*right: 10px;*/
+    height: 100%;
+    min-height: 100px;
+    margin-top:-100px;
+}
+.comment-view .add-story {
+    margin-top: 5px;
+    height: 70px;
+    margin-bottom: 0px;
+    bottom: 10px;
+}
+.comment-view .add-story .button-icon {
+    font-size: 50px;
+    width: 50%;
+    margin: 0 25%;
+    color: #666666;
+    bottom: 5px;
+}
+
+/*===========================================
+Comment view
+============================================*/
+.place-view .header-title{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 40px;
+}
+.place-view .story-content-view{
+    margin: 2% auto 60px auto;
+}
+.place-view .story-content-view .item-avatar {
+    border-width:0px;
+    height: 120px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+}
+.place-view .story-content-view .item-avatar .profile-image {
+    margin-top:25px;
+    width: 50px;
+    height: 50px;
+}
+.place-view .story-content-view .item-avatar .item {
+    border: 0px solid #666666;
+    border-color: #666666;
+    width: 100%;
+    margin-left: 0%;
+    height: 100%;
+    background-color: lightgray;
+}
+.place-view .story-content-view .item-avatar .item .location-btn {
+    margin-top:-70px;
+    margin-left: 80%;
+    font-size: 30px;
+    color: #666666;
+}
+.place-view .story-content-view .item-avatar .item .connect-btn {
+    margin-top:-90px;
+    margin-left: 93%;
+    font-size: 30px;
+    color: #666666;
+}
+.place-view .share-story{
+    width: 26%;
+    margin-left: 37%;
+    margin-top: 152%;
+    font-size: 50px;
+    color: #666666;
+    bottom: 25px;
+}
+
+/*===========================================
+Familie View
+============================================*/
+.familie-view .story-content-view{
+    margin: 2% auto 60px auto;
+}
+.familie-view .story-content-view .item-avatar {
+    border-width:0px;
+    height: 60px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+}
+.familie-view .story-content-view .item-avatar .profile-image {
+    margin-top:0px;
+    width: 40px;
+    height: 40px;
+}
+.familie-view .story-content-view .item-avatar .item {
+    border: 0px solid #666666;
+    border-color: #666666;
+    width: 100%;
+    margin-left: 0%;
+    height: 100%;
+    background-color: lightgray;
+}
+.familie-view .story-content-view .item-avatar .item .connect-btn {
+    margin-top:-40px;
+    margin-left: 93%;
+    font-size: 30px;
+    color: #666666;
+}
+.familie-view .share-story{
+    width: 26%;
+    margin-left: 37%;
+    margin-top: 152%;
+    font-size: 50px;
+    color: #666666;
+    bottom: 25px;
+}
+/*===========================================
+Intro View
+============================================*/
+.intro-back{
+    height: 100%;
+    width: 100%;
+}
+#logo {
+  /*margin: 40% 0px;*/
+  height:70%;
+  margin-bottom: 0px;
+  
+}
+
+.intro-view .login-btns{    
+    
+    width: 85%;
+    margin: 20% auto 0 auto;
+   
+    /*font-family: 'Akzidenz Grotesk BE MdCn' !important;*/
+        
+}
+.intro-view .login-btns .join-btn{
+   
+    width: 30%;
+    margin: 2% auto 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    min-height: 20px;
+}
+.intro-view .login-btns .join-btn.active, .intro-view .login-btns .join-btn.activated{
+    background-color: #ffffff;
+    color:#c9182d;
+    border-color: #c9182d;
+   
+}
+@font-face {
+	font-family: 'AkzidenzGroteskCondensed';
+
+	src:  url('./akzidenz-grotesk-be-condensed.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_13468">Text with this font applied</p> */
+
+
+
+.intro-view .login-btns .login-btn{
+    color: #ffffff;
+    min-height: 20px;
+    border-color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 4%;
+   font-family: 'AkzidenzGroteskCondensed'!important;
+}
+.intro-view .login-btns .fb-btn{
+  width: 65%;
+  margin: 2% auto 0 auto;
+  font-size: 14px;
+  color: #ffffff;
+    min-height: 20px;
+    
+}
+.intro-view .login-btns .button.button-positive {
+    background-color: #33487e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.intro-view .login-btns .videoplayer {
+    
+    background-color: #222222;
+    width: 100%;
+    height: 200px;
+    margin: 2% auto 2% auto;
+    margin-top: 20px;
+}
+.intro-view .login-btns .item {
+    border: none;
+    font-size: 14px;
+}
+
+.singlemap-view .add-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-right: auto;
+    display: block;
+    background: #222222;
+    color: #ffffff;
+    position: absolute;
+    z-index: 1000;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+/*===========================================
+Login View
+============================================*/
+
+.login-view .container{
+    position: absolute;
+    top: 25px;
+    left: 4%;
+    width: 92%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scroll {
+  height: 100%;
+}
+.login-view .container1{
+    width: 100%;
+ 
+    background-color: #ffffff;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.login-view .container .item{
+    padding: 0;
+    
+    border-right: none;
+    border-left: none;
+}
+.login-view .title-bar{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+}
+.login-view .container .title-bar .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: -8px;
+    margin-left: 10px;
+  
+}
+
+.login-view .container .item-input{
+    background-color: #ffffff;
+   
+}
+.login-view .container .login-btn{
+    margin-top: 15px;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    min-height: 20px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    color: #ffffff;
+    
+}
+.login-view .container .forgot-btn{
+    color: #c9182d;
+}
+/*===========================================
+Forgot View
+============================================*/
+
+
+.forgot-view .container{
+    padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;   
+   
+}
+.forgot-view .scroll{
+    background-color: #ededed;
+}
+.forgot-view .back{
+    width:16px;
+    height: 25px;
+    
+}
+.forgot-view .text-box{
+    background-color:#ffffff;
+}
+.forgot-view .button-assertive{
+    background-color: #000000;
+}
+.forgot-view .container .send-btn.active, .forgot-view .container .send-btn.activated{
+    color: #ffffff;
+    background-color:#5d5d5d;
+    border-color: #3d3d3d;
+}
+/*===========================================
+Register View
+============================================*/
+
+.register-view .container{
+    position: absolute;
+    top: 25px;
+    left: 4%;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.register-view .container .item{
+    padding: 0;
+    
+    border-right: none;
+    border-left: none;
+}
+.register-view .container1{
+    width: 100%;
+ 
+    background-color: #ffffff;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+.register-view .title-bar{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+  
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    color: #ffffff;
+    
+}
+.register-view .container .title-bar .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: -8px;
+    margin-left: 10px;
+  
+}
+
+.register-view .container .item-input{
+    background-color: #ffffff;
+    padding-top: 4px;
+    padding-bottom: 5px;
+   
+}
+.register-view .container .login-btn{
+    margin-top: 15px;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    min-height: 20px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    color: #ffffff;
+    
+}
+button.button-positive{
+    min-height: 20px;
+}
+
+/*===========================================
+ShareStory View
+============================================*/
+.share-view .bar-positive {
+    background-color: #666666;
+    border: none !important
+}
+.share-view .input-view {
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+}
+.share-view .input-view .item-input {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: #3d3d3d;
+}
+.share-view .story-btns {
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 40px;
+    background-color:#eeeeee;
+    border-radius: 10px;
+}
+.share-view .story-list {
+    width: 90%;
+    height: 80px;
+    margin-left: 5%;
+}
+.share-view .story-list .list-file{
+    width:40px;
+    float: left;
+    font-size: 30px;
+    margin:2% auto;
+    text-align: center;
+}
+.share-view .story-btn {
+    width: 60%;
+    min-height: 80px;
+    background-color: #008811;
+    font-weight: 500%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+.share-view .story-btn .btn-large-title {
+    font-size: 18px;
+    font-weight: 200%;
+    color: #ffffff;
+    
+}
+.share-view .story-btn .btn-small-title {
+    height: 30px;
+    margin-top: -15px;
+    font-size: 15px;
+    font-weight: 100%;
+    color: #ffffff;
+}
+.share-view .story-btns .row {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+}
+.share-view .story-btns .row .col .ion-document-text {
+    width: 50%;
+    font-size: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: darkgray;
+    text-align: center;
+}
+.share-view .story-btns .row .col .ion-ios7-camera {
+    width: 80%;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: darkgray;
+    text-align: center;
+}
+.share-view .story-btns .row .col .ion-folder {
+    width: 80%;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: darkgray;
+    text-align: center;
+}
+.share-view .story-btns .row .col .ion-videocamera {
+    width: 80%;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: darkgray;
+    text-align: center;
+}
+.share-view .story-btns .row .col .ion-ios7-mic {
+    width: 80%;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: darkgray;
+    text-align: center;
+}
+.share-view .story-btns .row .col .share-text {
+    width: 80%;
+    margin-left: 10%;
+    color: darkgrey;
+    text-align: center;
+}
+.share-view .story-btns .row .col .ion-plus-circled {
+    width: 80%;
+    font-size: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #222222;
+    text-align: center;
+}
+
+/*===========================================
+Finish Story View
+============================================*/
+.finish-view .input-view {
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    border-color: #000000;
+    height: 45px;
+}
+.finish-view .input-view .item-input {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto 5px auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: #dddddd;
+}
+.finish-view .input-view .item-input .item-select-view{
+    min-width: 100%;
+    margin:0 auto 0 auto;
+    direction: ltr;
+}
+.finish-view .input-view .check-label {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 16px;
+}
+.finish-view .input-view .other-view{
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    width: 75%;
+    margin-left: 30%;
+    margin-top: -55px;
+}
+.finish-view .input-view .other-view .item-input {
+    width: 82%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: #dddddd;
+}
+.finish-view .input-view .other-view .share-btn {
+    width: 35px;
+    color: #000000;
+    margin-left: -35px;
+    margin-left: 75%;
+    margin-top: -43px;
+    z-index: 1000;
+}
+.finish-view .story-list {
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+}
+.finish-view .story-list .list-file{
+    width:40px;
+    float: left;
+    font-size: 30px;
+    margin:2% auto;
+    text-align: center;
+}
+.finish-view .input-view .finish-btn {
+    width: 35px;
+    color: #000000;
+    margin-left: 85%;
+    margin-top: -62px;
+    z-index: 1000;  
+}
+.finish-view .input-view .location-btn {
+    width: 35px;
+    color: #000000; 
+    font-size: 25px;
+    margin-left: 77%;
+    margin-top: -48px;
+    z-index: 1000;
+}
+.finish-view .share-label {
+    width:90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.finish-view .share-story {
+    width: 60%;
+    background-color: #008811;
+    font-weight: 500%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.finish-view .share-story .btn-large-title {
+    font-size: 18px;
+    font-weight: 200%;
+    color: #ffffff;
+}
+/*===========================================
+Maintain Places View
+============================================*/
+.places-view .input-view {
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    border-color: #000000;
+}
+.places-view .input-view .item-input {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: #dddddd;
+}
+.places-view .check-label {
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    font-size: 16px;
+}
+.places-view .check-label .other-view{
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    width: 75%;
+    margin-left: 30%;
+    margin-top: -40px;
+}
+.places-view .check-label .other-view .item-input {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: #dddddd;
+}
+.places-view .check-label .other-view .share-btn {
+    width: 35px;
+    color: #000000;
+    margin-left: -35px;
+    margin-left: 80%;
+    margin-top: -43px;
+    z-index: 1000;
+}
+.places-view .story-list {
+    width: 90%;
+    height: 80px;
+    margin-left: 5%;
+}
+.places-view .input-view .finish-btn {
+    width: 35px;
+    color: #000000;
+    margin-left: 85%;
+    margin-top: -62px;
+    z-index: 1000;  
+}
+.places-view .input-view .location-btn {
+    width: 35px;
+    color: #000000; 
+    font-size: 25px;
+    margin-left: 85%;
+    margin-top: -42px;
+    z-index: 1000;
+}
+.places-view .share-label {
+    width:90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.places-view .share-story {
+    width: 50%;
+    min-height: 50px;
+    background-color: #008811;
+    font-weight: 500%;
+    margin-left: 25%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.places-view .share-story .btn-large-title {
+    font-size: 25px;
+    font-weight: 200%;
+    color: #ffffff;
+}
+
+/*===========================================
+Popup View
+============================================*/
+.popup-view{
+    width: 100%;
+    height: 40px;
+}
+.popup-view .setting-btn{
+    min-height: 40px;
+    margin-top:0px;
+    color: #000000;
+    font-weight: 200%;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+}
+
+.popup-view .notification-label{
+    background-color: #ffffff;
+    border-color: #b2b2b2;
+    height: 40px;
+    padding: 10px;
+}
+.popup-view .switch-btn {
+    margin-top:-12px;
+    z-index: 100;
+    margin-left: 75%;
+}
+
+/*===========================================
+SelectFacebook View
+============================================*/
+.select-facebook-view{
+    width:100%;
+    height: 230px;
+    margin-top: -24px;
+}
+/*===========================================
+Profile View
+============================================*/
+
+.profile-view .item-input{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 16px;
+    margin-top: 50px;
+    border-color: #666666;
+}
+.profile-view .fb-btn{
+  width: 65%;
+  margin: 20% auto 0 auto;
+  font-size: 14px;
+  color: #ffffff;
+  min-height: 20px;
+    
+}
+.profile-view .list-item{
+    border-top: 1px solid #ffffff;
+    margin: 0px;
+    border-left: 1px solid #ffffff;
+}
+/*===========================================
+For points view
+============================================*/
+.points-view .bar-positive1{
+    background-color: #000000;
+}
+.points-view .container{
+    margin: 0 auto;
+    width: 70%;
+}
+.points-view .helpbar{
+    background-color: #edeef0;
+    color: #222222;
+    padding-top:15px; 
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+.points-view .subject{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    
+}
+.points-view .circle1{
+    margin: 30px auto;
+    margin-bottom:0px;
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border:7px solid #edeef0;
+    /*position: relative;*/
+}
+.points-view .circle2{
+    margin: 0 auto;
+    
+    width: 106px;
+    height: 106px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 53px;
+    border:10px solid #c9182d;
+    /*position: relative;*/
+}
+.points-view .content{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.points-view .content .point{
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+.points-view .content .chars{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+.points-view .button-assertive{
+    background-color: #c9182d;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+    min-height: 30px;
+  
+}
+.points-view .shop-btn{
+    margin-top:10%;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+/*===========================================
+For profile edit view
+============================================*/
+.points-view .edit-container{
+    margin: 20px auto;
+    width: 94%;
+    background-color: #ffffff;
+    
+}
+.points-view .edit-container .list{
+    margin: 0 auto;
+    width: 95%;
+    margin-left: 3%;
+}
+.points-view .edit-container .list .item-input{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    padding-left: 0px;
+}
+.points-view .camera{
+    position: absolute;
+    top: 50px;
+    left: 33px;
+    width: 25px;
+}
+/*===========================================
+Settings view
+============================================*/
+.settings-view .item-divider{
+
+    padding-top: 23px;
+    color: #adadad;
+    font-weight: 200;
+    font-size: 14px;
+}
+.settings-view .back{
+    width:16px;
+    height: 25px;
+    
+}
+/*===========================================
+Resource view
+============================================*/
+.resource-view .subject-pic{
+    width: 100%;
+    height: 35%;
+    padding-bottom: 0px;
+   
+}
+.resource-view .category{
+    font-size: 20px;
+
+    margin-top: 10%;
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+.resource-view .content{
+    margin-top: 13px;
+    font-size: 12px;
+}
+.resource-view .content1{
+    margin-top: 25px;
+    font-size: 11px;
+}
+.resource-view p{
+    line-height: 10px;
+}
+.resource-view .item{
+   margin-top: 1px;
+   border: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 18px;
+
+    font-family: 'AkzidenzGroteskCondensed'!important;
+}
+/*===========================================
+Notification view
+============================================*/
+
+.notification-view .content-container{
+    width: 94%;
+    margin-left: 3%;
+
+
+
+}
+
+
+.notification-view p{
+    line-height: 10px;
+}
+.notification-view .item{
+   margin-top: 1px;
+   border: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    font-size: 14px;
+
+
+}
+/*===========================================
+Movement view
+============================================*/
+.movement-view .subject-pic{
+    width: 100%;
+}
+.movement-view .company_logo{
+    width: 60%;
+    margin-top: 10px;
+    
+}
+.movement-view .title{
+    font-size: 15px;
+}
+.movement-view .container{
+    margin: 25px 5% auto;
+    text-align: center;
+}
+.movement-view .item{
+    border: none;
+    text-align: center;
+}
+.movement-view .company_desc{
+    margin-top: 20px;
+    font-size: 12px;
+
+    text-align: center;
+}
+.movement-view .company_site{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #0000ff;
+    text-align: center;
+}
+
+

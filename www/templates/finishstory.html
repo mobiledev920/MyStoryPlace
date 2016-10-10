@@ -1,0 +1,74 @@
+<ion-view view-title="FinishStory" class="finish-view" hide-nav-bar="false" ng-init="init()">
+    
+    <ion-nav-bar class="bar-positive">
+        <h1 class="title">{{finishStoryName.story_name}}</h1>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-arrow-left-c" ng-click="goBack()">
+            </button>
+        </ion-nav-buttons>
+        <!--<ion-nav-buttons side="right">
+            <button class="button button-icon button-clear ion-navicon">
+            </button>
+        </ion-nav-buttons>-->
+    </ion-nav-bar>
+    <ion-content>
+        <div class="input-view">
+            <label class="item item-input">
+            <!--<span class="input-label">Story name</span>-->
+            <input type="search" placeholder="Description" ng-model="story_description.text" id="story_description">    
+            </label>
+        </div>
+        <div class="story-list">
+            <div class="list-file" ng-repeat="file in files track by $index" on-hold="editRmFile(file)">
+                <div ng-if="file==1" class="ion-document-text"></div>
+                <div ng-if="file==2" class="ion-image"></div>
+                <div ng-if="file==3" class="ion-social-vimeo"></div>
+            </div>
+        </div> 
+        <div class="input-view">
+            <label class="item item-select item-input">
+                <!--<input type="text" placeholder="Where">-->
+                <select class="item-select-view" ng-model="where_select" id="get_where">
+                    <option ng-repeat="select_item in where_selects" value="{{select_item.value}}" ng-selected="{{select_item.isChecked}}">{{select_item.value}}</option>
+                </select>
+            </label>
+            <button class="button button-clear button-icon location-btn" ng-click="goWhere()">
+                <div class="ion-ios7-location">
+                </div>
+            </button>
+        </div>
+        <div class=" row input-view">
+            <label class="col item item-input" style="margin-top:3%;">
+                <input type="number" placeholder="start" ng-model="whenStory_start.time" id="whenStory_start">
+            </label>
+            <label class="col item item-input"  style="margin-top:3%;">
+                <input type="number" placeholder="end" ng-model="whenStory_end.time" id="whenStory_end">
+            </label>
+        </div>
+        <div class="share-label">
+            <label style="font-size:16px">
+                Share with:
+            </label>
+        </div>
+        <div ng-repeat="item in shareFriendType" class="input-view">
+            <ion-checkbox  ng-model="item.Checked" style="border-width:0px">{{item.text}}</ion-checkbox>
+            <div ng-if="item.text == 'Others'" class="other-view">
+                <label class="item item-input">
+                    <input type="text" placeholder="SelectFromFacebook">
+                </label>
+                
+                <button class="button button-block button-clear button-icon share-btn" ng-click="selectWithFacebook()">
+                    <div class="ion-arrow-down-b">
+                    </div>
+                </button>
+            </div>
+       </div>
+       <div style="height:60px; margin-top:10px;">
+        <button class="button button-clear button-block share-story" ng-click="goFinish()">
+                <div class="btn-large-title">
+                    Share the story
+                </div>
+        </button>
+       </div>
+    </ion-content>
+</ion-view>

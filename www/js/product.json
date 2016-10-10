@@ -1,0 +1,23 @@
+[
+    {
+        "name":"HELL BENT CREW SOCK",
+        "price":"19.95",
+        "img_url":"img/product1.jpg"
+    },
+    {
+        "name":"WHOSDEVERS FOLDER",
+        "price":"9.95",
+        "img_url":"img/product2.jpg"
+    },
+    {
+        "name":"BENT CREW SOCK",
+        "price":"0",
+        "img_url":"img/product3.jpg"
+    },
+      {
+        "name":"BENT CREW SOCK",
+        "price":"0",
+        "img_url":"img/product3.jpg"
+    }       
+    
+]
